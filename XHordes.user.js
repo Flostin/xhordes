@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         XHordes
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.6.1
 // @description  A modded version of the Hordes.io client
 // @author       LegusX and CampFire
 // @match        https://hordes.io/
@@ -17,7 +17,7 @@
         url: "http://hordes.io",
         onload: function(ev) {
             document.open();
-            let index = ev.responseText.replace('<script async="async" src="script/dist.min.js"></script>', '<script async = "async" src="https://cdn.rawgit.com/LegusX/xhordes/14ef316f/src/month/month.js"></script>');
+            let index = ev.responseText.replace('<script async="async" src="script/dist.min.js"></script>', '<script async = "async" src="https://cdn.rawgit.com/LegusX/xhordes/7149e185/src/month/month.js"></script>');
             //index = index.replace('<link href="/styles/game.css" rel="stylesheet">', '<link href=" " rel="stylesheet">');
             document.write(index);
             document.close();
