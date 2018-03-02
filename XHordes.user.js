@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         XHordes - testing
+// @name         XHordes
 // @namespace    http://tampermonkey.net/
 // @version      0.6
 // @description  A modded version of the Hordes.io client
-// @author       LegusX
+// @author       LegusX and CampFire
 // @match        https://hordes.io/
 // @grant        GM_getValue
 // @grant        GM_setValue
