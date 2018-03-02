@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         XHordes
+// @name         XHordes - testing
 // @namespace    http://tampermonkey.net/
-// @version      0.5.2
+// @version      0.6
 // @description  A modded version of the Hordes.io client
 // @author       LegusX
 // @match        https://hordes.io/
@@ -14,13 +14,18 @@
     window.stop();
     GM_xmlhttpRequest({
         method: 'GET',
-        url: "https://hordes.io",
+        url: "http://hordes.io",
         onload: function(ev) {
             document.open();
-            let index = ev.responseText.replace('<script src="script/dist.min.js"></script>', '<script src="https://cdn.rawgit.com/LegusX/xhordes/958e990f/src/levelup/levelup2.js"></script> ');
-            index = index.replace('<link rel="stylesheet" href="gamestyles.css">', '<link rel="stylesheet" href="https://cdn.rawgit.com/LegusX/xhordes/c096f202/src/ads/hordesads.css">');
+            let index = ev.responseText.replace('<script async="async" src="script/dist.min.js"></script>', '<script async = "async" src="https://cdn.rawgit.com/LegusX/xhordes/14ef316f/src/month/month.js"></script>');
+            //index = index.replace('<link href="/styles/game.css" rel="stylesheet">', '<link href=" " rel="stylesheet">');
             document.write(index);
             document.close();
         }
     });
 })();
+
+//Make the DIV element draggagle: (Ignore this, it isn't finished)
+// var script = document.createElement("script");
+// script.textContent = 'function dragElement(e){var t=0,n=0,o=0,d=0;function m(e){e=e||window.event,o=e.clientX,d=e.clientY,document.onmouseup=u,document.onmousemove=i}function i(m){m=m||window.event,t=o-m.clientX,n=d-m.clientY,o=m.clientX,d=m.clientY,e.offsetTop-n<0||e.offsetLeft-t<0||e.offsetLeft-t+e.getBoundingClientRect().width-15>document.body.clientWidth||e.getBoundingClientRect().bottom-n>window.innerHeight||(document.getElementById("x").textContent=e.getBoundingClientRect().bottom,document.getElementById("y").textContent=e.getBoundingClientRect().bottom-n,e.style.top=e.offsetTop-n+"px",e.style.left=e.offsetLeft-t+"px")}function u(){document.onmouseup=null,document.onmousemove=null,document.getElementById("x").textContent=e.getBoundingClientRect().bottom,document.getElementById("y").textContent=window.innerHeight}document.getElementById(e.id+"header")?document.getElementById(e.id+"header").onmousedown=m:e.onmousedown=m}dragElement(document.getElementById("ui_chat")),dragElement(document.getElementById("ui_inventory")),dragElement(document.getElementById("ui_char"));';
+// document.body.appendChild(script);
