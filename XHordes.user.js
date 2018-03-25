@@ -8,7 +8,8 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_xmlhttpRequest
-//@run-at document-start
+// @run-at       document-start
+// @connect      hordes.io
 // ==/UserScript==
 (function(){
     window.stop();
