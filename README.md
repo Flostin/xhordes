@@ -3,7 +3,7 @@
 
 ### Installation
 
-## NOTE: XHORDES AND FIREFOX DO NOT PLAY WELL TOGETHER. IT IS HIGHLY RECOMMENDED THAT YOU USE GOOGLE CHROME INSTEAD.
+## NOTE: XHORDES DOES NOT WORK ON ALL BROWSERS. The following are supported: Google Chrome, Opera, Safari. XHordes does NOT work on Firefox, Microsoft Edge, or Internet Explorer
 Installation is incredibly simple.
 
 Depending on your browser (Chrome or Firefox) you'll need to install Tampermonkey for either [Google Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/), depending on your browser.
