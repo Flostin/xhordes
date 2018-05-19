@@ -6,7 +6,7 @@
 ## NOTE: XHORDES DOES NOT WORK ON ALL BROWSERS. The following are supported: Google Chrome, Opera, Safari. XHordes does NOT work on Firefox, Microsoft Edge, or Internet Explorer
 Installation is incredibly simple.
 
-Depending on your browser (Chrome or Firefox) you'll need to install Tampermonkey for either [Google Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/), depending on your browser.
+Depending on your browser (Chrome/Opera or Firefox) you'll need to install Tampermonkey for either [Google Chrome or Opera](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/), depending on your browser.
 
 Go ahead and click [here](https://github.com/LegusX/xhordes/raw/master/XHordes.user.js) to install XHordes. Your userscript manager should then prompt you about installing XHordes. If you accept it, the userscript manager should install XHordes.
 And you're done! You can now go to Hordes and check it out!
