@@ -18,8 +18,8 @@
         url: "http://hordes.io",
         onload: function(ev) {
             document.open();
-            let index = ev.responseText.replace('<script async="async" src="script/dist.min.js"></script>', '<script async = "async" src="https://cdn.rawgit.com/LegusX/xhordes/806da967/src/month/hideui.js"></script>');
-            //index = index.replace('<link href="/styles/game.css" rel="stylesheet">', '<link href=" " rel="stylesheet">');
+            let index = ev.responseText.replace('<script async="async" src="script/dist.min.js"></script>', '<script async = "async" src="https://cdn.rawgit.com/LegusX/xhordes/3f46fba6/src/emoji/emojimin.js"></script>');
+            index = index.replace('<link href="/styles/game.css" rel="stylesheet">', '<link href="https://cdn.rawgit.com/LegusX/xhordes/3f46fba6/src/emoji/hordesUI.css" rel="stylesheet">');
             document.write(index);
             document.close();
         }
