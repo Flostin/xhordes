@@ -12631,6 +12631,7 @@ window.xhordes.xToggle = function(el, s1, s2){
             var emojiText = ["grinning", "grin", "joy", "rofl", "smiley", "sweat_smile", "laughing", "wink", "blush", "yum", "sunglasses", "heart_eyes", "kissing_heart", "kissing", "kissing_smiling_eyes", "kissing_closed_eyes", "slight_smile", "hugging", "thinking", "neutral_face", "expressionless", "no_mouth", "rolling_eyes", "smirk", "perservere", "disappointed_relieved", "open_mouth", "sleepy", "tired_face", "sleeping", "relieved", "stuck_out_tongue", "stuck_out_tongue_winking_eye"]
             emojiText.push(["stuck_out_tongue_closed_eyes", "drooling_face", "unamused", "sweat", "pensive", "confused", "upside_down", "money_mouth", "astonished", "slight_frown", "confounded", "disappointed", "worried", "triumph", "cry", "sob", "frowning", "anguished", "fearful", "weary", "grimacing", "cold_sweat", "scream", "flushed", "dizzy_face", "rage", "angry", "mask", "thermometer_face", "injured", "nauseous", "puking", "sneezing", "innocent", "cowboy", "lying", "nerd", "smiling_imp", "imp", "clown", "skull", "ghost", "alien", "space_invader", "robot", "poop", "puzzled", "thumbsup", "thumbsdown", "ok_hand", "pizza", "beer", "beers", "icecream", "hotdog", "hamburger", "egg", "dagger", "gun", "cake", "shield", "bomb"])
             let matches = t.match(/\:[a-z_]*\:/g)
+            console.log(matches)
             if (matches !== null && matches[0]!== "") {
                 for (let i = 0;i<matches.length;i++) {
                     let pemoji = matches[i].replace(":", "");
