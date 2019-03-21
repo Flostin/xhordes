@@ -4,7 +4,7 @@
 // @version      0.6.1
 // @description  A modded version of the Hordes.io client
 // @author       LegusX and CampFire
-// @match        https://hordes.io/
+// @match        https://hordes.io/*
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_xmlhttpRequest
