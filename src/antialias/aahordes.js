@@ -13245,7 +13245,7 @@ window.xhordes.xToggle = function(el, s1, s2){
                     this.casttarget = void 0, e = !0;
                     break;
                 default:
-                    console.log("error (" + this.name + "): unknwon target type:" + this.targettype)
+                    console.log("error (" + this.name + "): unknown target type:" + this.targettype)
             }
             if (e && (Pe || this.predict) || t) switch (this.casttype) {
                 case "timed":
@@ -14562,7 +14562,6 @@ window.xhordes.xToggle = function(el, s1, s2){
             })
         };
     window.onload = function() {
-		console.log("yep new version")
         var t = new URL(location.href).searchParams.get("aa");
         (Ai = new THREE.WebGLRenderer({
             antialias: "true" == t
