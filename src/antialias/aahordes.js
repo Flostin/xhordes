@@ -199,7 +199,6 @@ window.xhordes.xToggle = function(el, s1, s2){
         Pe || (t.tick && (this.visualtick = t.tick), this.geometry = t.geometry || new THREE.Mesh(new THREE.BoxGeometry(.3, .3, .3), new THREE.MeshBasicMaterial({
             color: 255
         })), this.geometry.position.copy(this.position), Si.add(this.geometry), this.ribbon && (this.ribbonObject = vn(this.ribbon)))
-	console.log(this.geometry);
     }
 
     function _(t, e, i) {
